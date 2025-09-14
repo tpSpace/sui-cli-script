@@ -1,13 +1,32 @@
-# sui-cli-script
+# Sui CLI Setup Script
 
-- A simple script that helps you to setup git and sui-cli on Window.
+A simple PowerShell script to automatically install Sui CLI and required dependencies on Windows.
 
-## How to use this script
+## Quick Start
 
-- Right click on the script and choose run as administer.
+1. Right-click on `main.bat`
+2. Select "Run as Administrator"
+3. Wait for installation to complete
 
-## What does this script do?
+## What Gets Installed
 
-[x] Chocoley
-[x] Git
-[x] Sui-cli
+- **Chocolatey** - Package manager for Windows
+- **Git** - Version control system
+- **Sui CLI** - Sui blockchain development tools
+
+## Requirements
+
+- Windows 10/11
+- Administrator privileges
+- Internet connection
+
+## After Installation
+
+1. Restart your terminal
+2. Run `sui --version` to verify installation
+3. Start building with `sui move new my-project`
+
+## Need Help?
+
+- [Sui Documentation](https://docs.sui.io/)
+- [Sui Discord](https://discord.gg/sui)
