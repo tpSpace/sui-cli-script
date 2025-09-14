@@ -1,6 +1,26 @@
 # install-sui.ps1
 # Run this script in PowerShell as Administrator
 
+# ASCII Banner
+Write-Host @"
+  ______       _            _  _    _                        _ _                
+ / _____)     (_)          | |(_)  (_)             _        | | |               
+( (____  _   _ _ _____ ____| | _    _ ____   ___ _| |_ _____| | | _____  ____   
+ \____ \| | | | | (_____) ___) || |  | |  _ \ /___|_   _|____ | | || ___ |/ ___)  
+ _____) ) |_| | |    ( (___| || |  | | | | |___ | | |_/ ___ | | || ____| |      
+(______/|____/|_|     \____)\_)_|  |_|_| |_(___/   \__)_____|\_)_)_____)_|      
+                                                                                
+ ______           _______ _           _______                                   
+(____  \         (_______) |         (_______)        _                         
+ ____)  )_   _       _   | |__  _____ _     _  ____ _| |_ ___  ____  _   _  ___ 
+|  __  (| | | |     | |  |  _ \| ___ | |   | |/ ___|_   _) _ \|  _ \| | | |/___)
+| |__)  ) |_| |     | |  | | | | ____| |___| ( (___  | || |_| | |_| | |_| |___ |
+|______/ \__  |     |_|  |_| |_|_____)\_____/ \____)  \__)___/|  __/|____/(___/ 
+        (____/                                                |_|               
+"@ -ForegroundColor Cyan
+
+Write-Host "`n🚀 Starting Sui CLI Installation Process...`n" -ForegroundColor Yellow
+
 # Check for Administrator privileges
 if (-not ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole] "Administrator")) {
     Write-Host "❌ Please run this script as Administrator!" -ForegroundColor Red
